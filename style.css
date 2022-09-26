@@ -1,10 +1,21 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
     margin: 0;
     display: flex;
     justify-content: center;
     height: 100vh;
     align-items: center;
     background-color: rgb(59, 206, 169);
+}
+
+h1 {
+font-family: 'Roboto', sans-serif;
 }
 
 .feedback-container{
@@ -72,5 +83,23 @@ body{
     transform: translateX(-30%);
     bottom: 20%;
 }
+
+}
+@media (max-width: 320px) {
+    .feedback-container{
+        background-color: white;
+        width: 340px;
+        height: 170px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .rating-container {
+        position: absolute;
+        left: 84px;
+        transform: translateX(-10%);
+        bottom: 20%;
+    }
 
 }
